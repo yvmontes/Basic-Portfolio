@@ -141,3 +141,27 @@ input[type=button], input[type=submit], input[type=reset] {
   font-size: 12px;
   padding-top: 25px;
 }
+
+/* Container holding the image and the text in portfolio page*/
+.container {
+  position: relative;
+  font-family: Arial;
+}
+
+/* Text on images in portfolio page */
+.text-block {
+  position: absolute;
+  bottom: 20px;
+  right: 598px;
+  background-color: #4aaaa5;
+  color: white;
+  padding-left: 241px;
+  padding-right: 20px;
+}
+
+
+/* Container holding text */
+.text-box {
+  width: 39px;
+  text-align: center;
+}
