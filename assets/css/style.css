@@ -145,7 +145,7 @@ input[type=button], input[type=submit], input[type=reset] {
 /* Container holding the image and the text in portfolio page*/
 .container {
   position: relative;
-  font-family: Arial;
+  font-family: 'Georgia', Times, Times New Roman, serif;
 }
 
 /* Text on images in portfolio page */
@@ -155,6 +155,7 @@ input[type=button], input[type=submit], input[type=reset] {
   right: 598px;
   background-color: #4aaaa5;
   color: white;
+  text-align: center;
   padding-left: 241px;
   padding-right: 20px;
 }
@@ -163,5 +164,4 @@ input[type=button], input[type=submit], input[type=reset] {
 /* Container holding text */
 .text-box {
   width: 39px;
-  text-align: center;
 }

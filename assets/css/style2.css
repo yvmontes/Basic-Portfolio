@@ -1,61 +1,174 @@
-{
-    box-sizing: border-box;
+ /* responsive header */
+
+ * {box-sizing: border-box;}
+
+ body { 
+   margin: 0;
+   font-family: Arial, Helvetica, sans-serif;
+   line-height: 25px;
+   background-image: url(../images/dust.png);
+   background-repeat: repeat;
+ }
+ 
+ .logo {
+   background: #4aaaa5; 
+   padding-left: 235px;
+ }
+ 
+ .header {
+   overflow: hidden;
+   background-color: #fff;
+   border-bottom: 1px solid #ccc;
+ }
+ 
+ .header a {
+   float: left;
+   color: #A9A9A9;
+   text-align: center;
+   padding: 12px;
+   text-decoration: none;
+   font-size: 18px; 
+   line-height: 25px;
+ }
+ 
+ .header a.logo {
+   font-size: 30px;
+   font-weight: bold;
+   font-family: 'Georgia', Times, Times New Roman, serif;
+   color: #fff;
+   padding: 30px;
+ }
+ 
+ .header a:hover {
+   background-color: #68b6b2;
+   color: #fff;
+ }
+ 
+ .header-right-nav {
+   float: right;
+   padding-top: 15px;
+   padding-bottom: 15px;
+   padding-right: 235px;
+   color: #ccc;
+ }
+ 
+ @media screen and (max-width: 500px) {
+   .header a {
+     float: none;
+     display: block;
+     text-align: left;
+   }
+   
+   .header-right-nav {
+     float: none;
+   }
+ }
+ 
+ /* headers in content */
+ 
+  .header-content{
+   font-family: 'Georgia', Times, Times New Roman, serif;
+   color: #4aaaa5;
   }
-  
-  body {
-    font-family: Arial, Helvetica, sans-serif;
-  }
-  
-  /* Style the header */
-  header {
-    background-color: #666;
-    padding: 25px;
-    text-align: center;
-    font-size: 35px;
-    color: white;
-  }
-  
-  /* Container for flexboxes */
-  section {
-    display: -webkit-flex;
-    display: flex;
-  }
-  
-  /* Style the navigation menu */
-  nav {
-    -webkit-flex: 1;
-    -ms-flex: 1;
-    flex: 1;
-    background: #ccc;
-    padding: 20px;
-  }
-  
-  /* Style the list inside the menu */
-  nav ul {
-    list-style-type: none;
-    padding: 0;
-  }
-  
-  /* Style the content */
-  article {
-    -webkit-flex: 3;
-    -ms-flex: 3;
-    flex: 3;
-    background-color: #f1f1f1;
-    padding: 10px;
-  }
-  
-  /* Style the footer */
-  footer {
-    background-color: #777;
-    padding: 10px;
-    text-align: center;
-    color: white;
-  }
-  
-  /* Responsive layout - makes the menu and the content (inside the section) sit on top of each other instead of next to each other */
-  @media (max-width: 600px) {
-    section {
-      -webkit-flex-direction: column;
-      flex-direction: column;
-    }
+ 
+ 
+  /* div container with content */
+ 
+ .content-center {
+   margin: auto;
+   margin-top: 35px;
+   margin-bottom: 150px;
+   border: 1px solid #ddd;
+   padding: 30px;
+   padding-bottom: 30px;
+   width: 960px;
+   background-color: #fff;
+   content: "";
+   clear: both;
+   display: table;
+   font:#777
+ }
+ 
+  /* horizontal line under header */
+ 
+ .hr-content {
+ margin-left: auto;
+ margin-right: auto;
+ border: 2px solid #ddd;
+ }
+ 
+  /* text wrap around image and left alignment */
+ 
+ .about-img  {
+   float: left;
+   margin: 20px;
+ }
+ 
+ 
+ /* Style inputs with type="text", select elements and textareas */
+ input[type=text], select, textarea {
+   width: 100%; /* Full width */
+   padding: 12px; /* Some padding */  
+   border: 1px solid #ccc; /* Gray border */
+   box-sizing: border-box; /* Make sure that padding and width stays in place */
+   margin-top: 6px; /* Add a top margin */
+   margin-bottom: 16px; /* Bottom margin */
+   resize: vertical /* Allow the user to vertically resize the textarea (not horizontally) */
+ }
+ input[type=button], input[type=submit], input[type=reset] {
+   background-color: #4aaaa5;
+   border: none;
+   color: white;
+   padding: 16px 32px;
+   text-decoration: none;
+   margin: 4px 2px;
+   cursor: pointer;
+   font-size: 14px;
+ }
+ 
+  /* fixed footer */
+ 
+ .footer {
+   position: fixed;
+   left: 0;
+   bottom: 0;
+   width: 100%;
+   background-color: #666666;
+   color: #dddddd;
+   text-align: center;
+   border-top: 8px solid #4aaaa5;
+   font-family: 'Arial', 'Helvetica Neue', Helvetica, sans-serif;
+   font-size: 12px;
+   padding-top: 25px;
+ }
+ 
+ /* Container holding the image and the text in portfolio page*/
+ .container {
+   position: relative;
+   font-family: 'Georgia', Times, Times New Roman, serif;
+ }
+ 
+ /* Text on images in portfolio page */
+ .text-banner {
+   position: absolute;
+   bottom: 20px;
+   right: 598px;
+   background-color: #4aaaa5;
+   color: white;
+   text-align: center;
+   padding-left: 241px;
+   padding-right: 20px;
+   font-family: 'Georgia', Times, Times New Roman, serif;
+   font-weight: normal;
+ }
+ 
+ 
+ /* Container holding text */
+ .text-box {
+   width: 39px;
+ }
+
+
+ .h4 {
+   font-weight: normal;
+ }
